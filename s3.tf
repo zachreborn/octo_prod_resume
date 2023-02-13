@@ -14,7 +14,7 @@ module "s3_prod_website_pub_bucket" {
                 "s3:GetObject"
             ]
             Principal = "*"
-            Resource  = "${module.s3_prod_website_pub_bucket.arn}"
+            Resource  = "${module.s3_prod_website_pub_bucket.s3_bucket_arn}"
             }]
     })
 
