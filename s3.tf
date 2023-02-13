@@ -10,9 +10,10 @@ module "s3_prod_website_pub_bucket" {
     acl    = "public-read"
 
     tags                   = {
-        terraform   = "yes"
-        created_by  = "terraform"
+        terraform   = "true"
+        created_by  = "Zachary Hill"
         environment = "prod"
         role        = "website_bucket"
+        project     = "resume"
     }
 }
