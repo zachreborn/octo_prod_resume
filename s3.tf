@@ -7,7 +7,7 @@ module "resume_website" {
     policy = file("global/s3/bucket_policies/resume_website_policy.json")
     bucket = "zachary-hill-prod-resume"
 
-    tags                   = {
+    tags   = {
         terraform   = "true"
         created_by  = "Zachary Hill"
         environment = "prod"
