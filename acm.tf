@@ -8,6 +8,7 @@ module "cert_zacharyhill_co" {
     domain_name               = "zacharyhill.co"
     validation_method         = "DNS"
     subject_alternative_names = ["www.zacharyhill.co"]
+    key_algorithm             = "EC_prime256v1"
     tags                      = {
         terraform   = "true"
         created_by  = "Zachary Hill"
