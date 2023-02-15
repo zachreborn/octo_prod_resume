@@ -4,7 +4,7 @@
 module "zacharyhill_prod_resume_website" {
     source = "github.com/thinkstack-co/terraform-modules//modules/aws/s3_website?ref=dev_s3_website_2023_update"
     
-    policy = file("global/s3/bucket_policies/resume_website_policy.json")
+    policy = file("global/s3/bucket_policies/prod_resume_website_policy.json")
     bucket = "zacharyhill.co"
 
     tags   = {
@@ -19,7 +19,7 @@ module "zacharyhill_prod_resume_website" {
 module "zacharyhill_dev_resume_website" {
     source = "github.com/thinkstack-co/terraform-modules//modules/aws/s3_website?ref=dev_s3_website_2023_update"
     
-    policy = file("global/s3/bucket_policies/resume_website_policy.json")
+    policy = file("global/s3/bucket_policies/dev_resume_website_policy.json")
     bucket = "dev.zacharyhill.co"
 
     tags   = {
