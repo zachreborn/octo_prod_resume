@@ -3,7 +3,7 @@
 ################################################################################################################################
 
 module "cert_zacharyhill_co" {
-    source = "github.com/thinkstack-co/terraform-modules//modules/aws/acm_certificate?ref=v1.17.2"
+    source = "github.com/thinkstack-co/terraform-modules//modules/aws/acm_certificate?ref=v1.17.4"
 
     domain_name               = "zacharyhill.co"
     validation_method         = "DNS"
@@ -12,6 +12,7 @@ module "cert_zacharyhill_co" {
         terraform   = "true"
         created_by  = "Zachary Hill"
         environment = "prod"
-        role        = "resume website"
+        role        = "resume website certificate"
+        project     = "resume"
         }
 }
