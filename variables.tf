@@ -1,11 +1,13 @@
 variable "access_id" {
+  type        = string
   description = "AWS access id"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "secret_key" {
+  type        = string
   description = "AWS secret key"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "aws_prod_region" {
