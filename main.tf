@@ -5,7 +5,7 @@
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "thinkstack-co"
+    organization = "octo-codes"
 
     workspaces {
       name = "octo_prod_resume"
