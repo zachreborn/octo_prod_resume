@@ -3,7 +3,7 @@
 ################################################################################################################################
 
 module "cert_zacharyhill_co" {
-  source = "github.com/thinkstack-co/terraform-modules//modules/aws/acm_certificate?ref=v2.1.1"
+  source = "github.com/zachreborn/terraform-modules//modules/aws/acm_certificate?ref=v2.7.2"
 
   domain_name               = "zacharyhill.co"
   validation_method         = "DNS"
