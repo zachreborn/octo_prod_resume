@@ -2,7 +2,7 @@
 # S3 Modules
 ################################################################################################################################
 module "zacharyhill_prod_resume_website" {
-  source = "github.com/zachreborn/terraform-modules//modules/aws/s3/s3_website?ref=v2.7.2"
+  source = "github.com/zachreborn/terraform-modules//modules/aws/s3/s3_website?ref=dev_s3_website_output_fix"
   policy = file("global/s3/bucket_policies/prod_resume_website_policy.json")
   bucket = "zacharyhill.co"
   tags   = {
@@ -15,7 +15,7 @@ module "zacharyhill_prod_resume_website" {
 }
 
 module "zacharyhill_dev_resume_website" {
-  source = "github.com/zachreborn/terraform-modules//modules/aws/s3/s3_website?ref=v2.7.2"
+  source = "github.com/zachreborn/terraform-modules//modules/aws/s3/s3_website?ref=dev_s3_website_output_fix"
   policy = file("global/s3/bucket_policies/dev_resume_website_policy.json")
   bucket = "dev.zacharyhill.co"
   tags   = {
