@@ -3,10 +3,8 @@
 ################################################################################################################################
 module "zacharyhill_prod_resume_website" {
   source = "github.com/zachreborn/terraform-modules//modules/aws/s3_website?ref=v2.7.2"
-  
   policy = file("global/s3/bucket_policies/prod_resume_website_policy.json")
   bucket = "zacharyhill.co"
-
   tags   = {
       terraform   = "true"
       created_by  = "Zachary Hill"
@@ -18,10 +16,8 @@ module "zacharyhill_prod_resume_website" {
 
 module "zacharyhill_dev_resume_website" {
   source = "github.com/zachreborn/terraform-modules//modules/aws/s3_website?ref=v2.7.2"
-  
   policy = file("global/s3/bucket_policies/dev_resume_website_policy.json")
   bucket = "dev.zacharyhill.co"
-
   tags   = {
       terraform   = "true"
       created_by  = "Zachary Hill"
