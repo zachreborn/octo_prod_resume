@@ -3,7 +3,7 @@
 ################################################################################################################################
 
 terraform {
-  cloud {
+  backend "remote" {
     hostname     = "octo.scalr.io"
     organization = "aws_environment"
     workspaces {
