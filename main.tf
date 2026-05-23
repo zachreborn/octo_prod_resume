@@ -3,10 +3,9 @@
 ################################################################################################################################
 
 terraform {
-  backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "octo-codes"
-
+  cloud {
+    hostname     = "octo.scalr.io"
+    organization = "aws_environment"
     workspaces {
       name = "octo_prod_resume"
     }
