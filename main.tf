@@ -4,9 +4,8 @@
 
 terraform {
   backend "remote" {
-    hostname     = "app.terraform.io"
-    organization = "octo-codes"
-
+    hostname     = "octo.scalr.io"
+    organization = "aws_environment"
     workspaces {
       name = "octo_prod_resume"
     }
@@ -26,4 +25,7 @@ terraform {
 
 provider "aws" {
   region = var.aws_prod_region
+  assume_role {
+    role_arn = "arn:aws:iam::470238156526:role/OrganizationAccountAccessRole"
+  }
 }
